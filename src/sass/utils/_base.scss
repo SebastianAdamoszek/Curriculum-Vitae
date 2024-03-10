@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  color: rgb(37, 37, 45);
+  font-family: "Montserrat", sans-serif;
+  cursor: url(../../src/img/cursor.svg), auto;
+  text-shadow: var(--body-text-shadow);
+  margin: 5px auto;
+  width: 320px;
+  transform: scale(0.27);
+  transform-origin: left top;
+
+  @include small {
+    transform: scale(0.4);
+    width: 480px;
+  }
+  @include medium {
+    transform: scale(0.64);
+    margin: 20px auto;
+    width: 768px;
+  }
+  @include large {
+    transform: scale(1);
+    width: 1200px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  position: relative;
+  width: 1200px;
+  background: var(--wrapper-background-color);
+  box-shadow: var(--wrapper-box-shadow);
+}

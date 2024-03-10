@@ -1,0 +1,97 @@
+.main {
+  width: auto;
+  height: auto;
+  margin: 250px 0 100px 0;
+}
+
+.section {
+    &__box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      margin: 25px 0 25px 80px;
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 28px;
+      padding: 15px 0 15px 25px;
+      color: var(--main-font-primary);
+    }
+    &__list {
+      list-style: none;
+      width: 500px;
+    }
+
+    &__projects-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      list-style: none;
+    }
+    &__project-sort {
+      display: flex;
+      gap: 15px;
+    }
+    &__projects-list li {
+      width: 80px;
+      height: 40px;
+      background-color: var(--button-background-color);
+      border-radius: 10px;
+      border-bottom: 5px solid var(--button-border-color);
+      border-right: 3px solid var(--button-border-color);
+      cursor: pointer;
+      color: var(--button-font-primary);
+      transition: 0.25s ease-in-out;
+
+      &:hover {
+        transform: scale(1.02);
+        color: var(--button-font-secondary);
+      }
+      &:active {
+        border-bottom: 1px solid var(--button-border-color);
+        border-right: 1px solid var(--button-border-color);
+        transform: translate(3px, 3px);
+        width: 82px;
+        height: 40px;
+        color: var(--button-font-tertiary);
+      }
+    }
+    &__projects-list--text {
+      text-align: center;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-top: 10px;
+      letter-spacing: 1.3px;
+    }
+    &__list li {
+      list-style: inside;
+      padding: 0px 0 10px 10px;
+      list-style-position: inside;
+      font-weight: 500;
+      font-size: 18px;
+      letter-spacing: 1.3px;
+    }
+ 
+    &__description {
+      font-weight: 500;
+      padding: 10px 0 10px 0;
+    }
+
+    &__sub-title {
+      font-weight: 700px;
+      font-size: 22px;
+    }
+    &__title-color {
+      color: var(--main-font-tertiary);
+    }
+
+    &__date {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 15px;
+      color: var(--main-font-quaternary);
+      padding: 5px 5px 10px 0;
+    }
+  }

@@ -1,14 +1,31 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="./img/favi.png" type="image/png" />
     <title>CV</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <link href="./sass/index.scss" rel="stylesheet" />
+    <link href="./css/animation.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-  
-    <include src="./partials/header.html"></include>
+  <body class="body__start-animation">
+    <div class="wrapper wrapper__start-animation">
+      <include src="./partials/header.html"></include>
+      <include src="./partials/aside.html"></include>
+      <main class="main">
+        <include src="./partials/repozytories.html"></include>
+        <include src="./partials/carrer.html"></include>
+        <include src="./partials/education.html"></include>
+      </main>
+    </div>
+    <include src="./partials/gallery-modal.html"></include>
+    <script  src="./index.js" type="module"></script>
   </body>
 </html>
