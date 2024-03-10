@@ -1,0 +1,47 @@
+.header {
+    &__box {
+        position: absolute;
+        width: 1000px;
+        height: auto;
+        background-color: var(--header-background-color);
+        top: 30px;
+        left: 100px;
+        padding: 15px 0 15px 0;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 1.3px;
+        padding-left: 300px;
+        color: var(--header-font-tertiary);
+    }
+
+    &__person {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding-right: 90px;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    &__person-first-name {
+        color: var(--header-font-primary)
+    }
+
+    &__person-last-name {
+        color: var(--header-font-secondary);
+        padding: 20px 0 0 10px;
+    }
+
+    &__sub-title {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: var(--header-font-tertiary);
+        padding: 5px 60px 25px 0;
+        text-align: right;
+    }
+}
