@@ -1,12 +1,4 @@
 const images = [
-  // link local repozytory
-  // "../img/gallery/001.jpg",
-  // "../img/gallery/002.jpg",
-  // "../img/gallery/003.jpg",
-  // "../img/gallery/004.jpg",
-  // "../img/gallery/005.jpg",
-  // "../img/gallery/006.jpg",
-
   'https://github.com/SebastianAdamoszek/CV/blob/main/img/gallery/001.jpg?raw=true',
   'https://github.com/SebastianAdamoszek/CV/blob/main/img/gallery/002.jpg?raw=true',
   'https://github.com/SebastianAdamoszek/CV/blob/main/img/gallery/003.jpg?raw=true',
