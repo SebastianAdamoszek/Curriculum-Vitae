@@ -21,8 +21,12 @@ document.addEventListener('DOMContentLoaded', function () {
   const prevButton = document.getElementById('prevButton');
   const nextButton = document.getElementById('nextButton');
   const imageElement = document.getElementById('image');
+  const modalOpenElements = document.querySelectorAll('[data-modal-open]');
 
   function openModal() {
+    const modal = document.querySelector('.modal');
+    const backdrop = document.querySelector('.backdrop');
+
     modal.classList.add('is-visible');
     backdrop.classList.add('is-visible');
     showCurrentImage();
@@ -31,6 +35,9 @@ document.addEventListener('DOMContentLoaded', function () {
     prevButton.addEventListener('click', prevImage);
     nextButton.addEventListener('click', nextImage);
   }
+  modalOpenElements.forEach(element => {
+    element.addEventListener('click', openModal);
+  });
 
   function closeModal() {
     modal.classList.remove('is-visible');

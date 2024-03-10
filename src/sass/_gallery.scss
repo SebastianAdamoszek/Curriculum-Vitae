@@ -28,7 +28,6 @@
     margin-left: -2000px;
   }
 }
-
 .modal {
   display: none;
   position: fixed;
@@ -53,49 +52,56 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
-  &__img {
+}
+.gallery {
+  &__border {
     width: 400px;
     height: 600px;
     margin: auto;
     border: var(--modal-img-border-style);
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-}
+  &__img {
+    width: 400px;
+    height: 600px;
+    padding: 15px;
+  }
+  &__btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 10px;
 
-.gallery-btns {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  margin-top: 10px;
-
-  &__btn {
-    width: 100px;
-    height: 40px;
-    background-color: var(--button-background-color);
-    border-radius: 10px;
-    border: 2px solid var(--button-border-color);
-    cursor: pointer;
-    color: var(--button-font-primary);
-    transition: 0.25s ease-in-out;
-    border-radius: 10px;
-    border-bottom: 5px solid var(--button-border-color);
-    border-right: 3px solid var(--button-border-color);
-
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: 1.3px;
-    text-shadow: var(--body-text-shadow);
-
-    &:hover {
-      color: var(--button-font-secondary);
-      transform: scale(1.02);
-    }
-    &:active {
-      height: 38px;
-      color: var(--button-font-tertiary);
+    &__btn {
+      width: 100px;
+      height: 40px;
+      background-color: var(--button-background-color);
+      border-radius: 10px;
       border: 2px solid var(--button-border-color);
+      cursor: pointer;
+      color: var(--button-font-primary);
+      transition: 0.25s ease-in-out;
+      border-radius: 10px;
+      border-bottom: 5px solid var(--button-border-color);
+      border-right: 3px solid var(--button-border-color);
+
+      text-align: center;
+      font-weight: 700;
+      letter-spacing: 1.3px;
+      text-shadow: var(--body-text-shadow);
+
+      &:hover {
+        color: var(--button-font-secondary);
+        transform: scale(1.02);
+      }
+      &:active {
+        height: 38px;
+        color: var(--button-font-tertiary);
+        border: 2px solid var(--button-border-color);
+      }
     }
   }
 }
