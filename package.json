@@ -5,7 +5,7 @@
   "homepage": "https://github.com/SebastianAdamoszek/Curriculum-Vitae.git",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Curriculum-Vitae.git/"
+    "build": "parcel build src/*.html"
   },
   "keywords": [],
   "author": "Sebastian Adamoszek",
